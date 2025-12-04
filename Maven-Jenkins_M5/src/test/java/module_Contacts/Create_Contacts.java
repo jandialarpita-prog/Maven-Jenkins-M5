@@ -86,15 +86,15 @@ public class Create_Contacts {
 				WebElement choose = driver.findElement(By.linkText("automationwitharpita"));
 				Actions act = new Actions(driver);
 				act.moveToElement(choose).click().build().perform();
-				Thread.sleep(1000);
-				driver.close();
+				//driver.switchTo().alert().accept();
+				//Thread.sleep(1000);
 				break;
 			}
 		}
 
 		// STEP 6 :COME BACK TO HOME/PARENT PAGE
 		driver.switchTo().window(PID);
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		
 
  //		Save 
